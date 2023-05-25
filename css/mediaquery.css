@@ -1,0 +1,5 @@
+/* Ordine per Desktop First
+    - Caso Base --> Desktop; 
+    - Tablet --> In Media Query max-width: 1100px;
+    - Mobile: In Media Query max-width:700px;
+    -Mobile Small: In Media Query max-width: 600px;*/
