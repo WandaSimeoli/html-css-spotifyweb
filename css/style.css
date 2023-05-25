@@ -8,3 +8,20 @@
 .container {
     margin: 0 auto;
 }
+.debug {
+    min-width: 100px;
+    min-height: 100px;
+    border: 2px dashed magenta;
+}
+.flex {
+    display: flex;
+}
+.col-header {
+    width: 20%;
+}
+.col-main {
+    width: 80%;
+}
+footer .row {
+    justify-content: space-between;
+}
