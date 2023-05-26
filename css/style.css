@@ -8,6 +8,11 @@
 .container {
     margin: 0 auto;
 }
+:root {
+    --bg-color-aside: black;
+    --bg-color-header: rgb(15, 26, 26);
+    --bg-color-main: rgb(25, 42, 42);
+}
 .debug {
     min-width: 100px;
     min-height: 100px;
@@ -16,7 +21,10 @@
 .flex {
     display: flex;
 }
-.col-header {
+header {
+    background-color:var(--bg-color-header);
+}
+.col-aside {
     width: 20%;
 }
 .col-main {
@@ -24,4 +32,12 @@
 }
 footer .row {
     justify-content: space-between;
+}
+aside {
+    background-color: var(--bg-color-aside);
+    color: gray;
+}
+main {
+    background-color:var(--bg-color-main);
+    color: white;
 }
