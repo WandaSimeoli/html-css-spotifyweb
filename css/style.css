@@ -14,8 +14,8 @@
     --bg-color-main: rgb(25, 42, 42);
 }
 .debug {
-    min-width: 100px;
-    min-height: 100px;
+    /* min-width: 100px;
+    min-height: 100px; */
     border: 2px dashed magenta;
 }
 .row > body {
@@ -24,6 +24,18 @@
 .flex {
     display: flex;
 }
+aside {
+    background-color: var(--bg-color-aside);
+    color: gray;
+    width: 200px;
+    padding: 0 10px;
+}
+aside ul a li, aside h3, aside div, aside ul li, aside img {
+    padding: 10px 0 ;
+}
+aside > div .fa-solid {
+    padding: 20px 0;
+}
 aside img {
     width: 60%;
 }
@@ -31,45 +43,78 @@ aside a {
     text-decoration: none;
     color: gray;
 }
-aside a:first-child, h3{
+aside span,  h3, aside ul a:first-child{
     color: white;
 }
-
+aside div:last-of-type {
+    margin-top: 200px;
+}
+aside div a {
+    color: gray;
+}
 header {
     background-color:var(--bg-color-header);
     position: fixed;
     top: 0;
     right: 0;
     width: calc(100% - 200px);
+    padding: 10px 10px;
+}
+header button {
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: var(--bg-color-header);
+    color: white;
+    border-color: white;
+    margin-left: 1050px;
 }
 .col img {
-    width: 60%;
-}
-.col-main {
-    overflow-y: auto;
-    height: 100%;
-}
-main .row .col {
-    width: calc(100% / 6);
-}
-footer .row {
-    justify-content: space-between;
-}
-aside {
-    background-color: var(--bg-color-aside);
-    color: gray;
-    width: 200px;
+    width: 80%;
 }
 main {
     background-color:var(--bg-color-main);
     color: white;
     width: calc(100% - 200px);
     overflow: hidden;
+    padding: 0 10px;
+
+}
+.col-main {
+    overflow-y: auto;
+    height: 100%;
+    padding-top: 70px;
+}
+nav ul  {
+    justify-content:center;
+}
+nav ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+nav ul a {
+    color: gray;
+    text-decoration: none;
+}
+.col-main h2 {
+    margin: 10px 0 ;
+}
+.col-main p {
+    color: gray;
+    margin-bottom: 15px;
+}
+main .row .col {
+    width: calc((100% / 6) - 10px);
+    text-align: center;
+    margin: 0 5px;
+}
+footer .row {
+    justify-content: space-between;
 }
 footer {
     height: 100px;
     background-color: gray;
     color: white;
+    padding: 10px 10px;
     /* position: fixed;
     left: 0;
     bottom: 0;
