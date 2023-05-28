@@ -11,15 +11,15 @@
 :root {
     --bg-color-aside: black;
     --bg-color-header: rgb(15, 26, 26);
-    --bg-color-main: rgb(25, 42, 42);
+    --bg-color-main: rgb(20, 39, 39);
 }
 .debug {
     /* min-width: 100px;
     min-height: 100px; */
     border: 2px dashed magenta;
 }
-.row > body {
-    height: calc(100vh - 200px);
+.content > body {
+    height: calc(100vh - 150px);
 }
 .flex {
     display: flex;
@@ -33,23 +33,28 @@ aside {
 aside ul a li, aside h3, aside div, aside ul li, aside img {
     padding: 10px 0 ;
 }
-aside > div .fa-solid {
-    padding: 20px 0;
+.small {
+    display: none;
 }
-aside img {
+.big {
     width: 60%;
 }
 aside a {
     text-decoration: none;
     color: gray;
+    display: block;
 }
-aside span,  h3, aside ul a:first-child{
+.down a {
+    display: inline-block;
+}
+aside ul li {
+    list-style: none;
+    display: inline-block;
+}
+aside span,  h3{
     color: white;
 }
-aside div:last-of-type {
-    margin-top: 200px;
-}
-aside div a {
+aside div a, .fa-heart, .fa-folder {
     color: gray;
 }
 header {
@@ -60,13 +65,15 @@ header {
     width: calc(100% - 200px);
     padding: 10px 10px;
 }
+header .flex {
+    justify-content: flex-end;
+}
 header button {
     border-radius: 20px;
     padding: 10px 30px;
     background-color: var(--bg-color-header);
     color: white;
     border-color: white;
-    margin-left: 1050px;
 }
 .col img {
     width: 80%;
@@ -74,7 +81,7 @@ header button {
 main {
     background-color:var(--bg-color-main);
     color: white;
-    width: calc(100% - 200px);
+    width: calc(100% - 100px);
     overflow: hidden;
     padding: 0 10px;
 
@@ -89,11 +96,12 @@ nav ul  {
 }
 nav ul li {
     list-style: none;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 nav ul a {
     color: gray;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .col-main h2 {
     margin: 10px 0 ;
@@ -112,18 +120,60 @@ footer .row {
 }
 footer {
     height: 100px;
-    background-color: gray;
+    background-color: rgb(42, 42, 42);
     color: white;
-    padding: 10px 10px;
-    /* position: fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%; */
+    width: 100%;
+    margin-top: 50px;
 }
-footer .row .col img  {
+footer .row {
+    height: 100%;
+}
+.img  {
     width: 20%;
 }
 footer .row .col:first-child {
-    justify-content: space-between;
-    align-items: center;
+    width: calc(60% / 2);
 }
+footer .row .col:nth-child(2){
+    width: 40%;
+    text-align: center;
+}
+footer .row .col:nth-child(3) {
+       width: calc(60% / 2);
+       text-align: center;
+}
+footer .row > * {
+   align-items: center;
+   justify-content: center;
+}
+.time, .vol {
+    background-color: gray;
+    height: 5px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.time > div, .vol > div {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+ .fa-heart {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+footer .row .col:nth-child(2) > * , .fa-bars,  .fa-display, .fa-volume-high {
+    padding: 10px 10px;
+}
+.time {
+    width: 60%;
+}
+.flex > .vol {
+    width: 40%;
+}
+
+
