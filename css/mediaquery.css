@@ -37,6 +37,9 @@
     aside {
         width: 60px;
     }
+    header {
+        width: calc(100% - 60px);
+    }
     main {
         width: calc(100% - 50px);
     }
@@ -55,5 +58,8 @@
     nav a {
         width: calc(100% / 4);
         font-size: 10px;
+    }
+    .time, .vol {
+        margin: 0 0;
     }
 }

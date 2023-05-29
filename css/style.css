@@ -14,9 +14,9 @@
     --bg-color-header: rgba(15, 26, 26, 0.5);
     --bg-color-main: rgb(20, 39, 39);
 }
-.debug {
+/* .debug {
     border: 2px dashed magenta;
-}
+} */
 body > .content {
     height: calc(100vh - 100px);
 }
@@ -56,6 +56,8 @@ aside ul:last-of-type {
 .down {
     position: absolute;
     bottom: 0;
+    background-color: black;
+    width: 80%;
 }
 aside ul li {
     list-style: none;
@@ -74,7 +76,7 @@ header {
     top: 0;
     right: 0;
     width: calc(100% - 200px);
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 header .flex {
     justify-content: flex-end;
@@ -159,8 +161,7 @@ footer .row {
     height: 100%;
 }
 .img  {
-    width: 20%;
-    margin-left: -50px;
+    width: 50px;
 }
 footer .row .col:first-child {
     width: calc(60% / 2);
@@ -184,6 +185,9 @@ footer .row > * {
     display: inline-block;
     margin: 0 15px;
 }
+span > div:nth-child(2) {
+    display: inline-block;
+}
 .time > div, .vol > div {
     width: 40%;
     height: 100%;
@@ -191,7 +195,7 @@ footer .row > * {
     border-radius: 2px;
 }
  .fa-heart {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 10px;
 }
 footer .row .col:nth-child(2) > * , .fa-bars,  .fa-display, .fa-volume-high {
