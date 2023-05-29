@@ -18,8 +18,8 @@
     min-height: 100px; */
     border: 2px dashed magenta;
 }
-.content > body {
-    height: calc(100vh - 150px);
+body > .content {
+    height: calc(100vh - 100px);
 }
 .flex {
     display: flex;
@@ -29,6 +29,7 @@ aside {
     color: gray;
     width: 200px;
     padding: 0 10px;
+    flex-direction: column;
 }
 aside ul a li, aside h3, aside div, aside ul li, aside img {
     padding: 10px 0 ;
@@ -51,7 +52,7 @@ aside ul li {
     list-style: none;
     display: inline-block;
 }
-aside span,  h3{
+aside span,  h3, .home{
     color: white;
 }
 aside div a, .fa-heart, .fa-folder {
@@ -63,7 +64,7 @@ header {
     top: 0;
     right: 0;
     width: calc(100% - 200px);
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 header .flex {
     justify-content: flex-end;
@@ -81,8 +82,7 @@ header button {
 main {
     background-color:var(--bg-color-main);
     color: white;
-    width: calc(100% - 100px);
-    overflow: hidden;
+    width: calc(100% - 200px);
     padding: 0 10px;
 
 }
