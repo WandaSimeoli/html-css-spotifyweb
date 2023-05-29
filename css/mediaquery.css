@@ -27,6 +27,9 @@
         width: calc((100% / 2) - 10px);
         flex-wrap: wrap;
     }
+    .time, .vol {
+        margin: 0 0;
+    }
 }
 /*  -Mobile Small: In Media Query max-width: 600px; */
 @media screen and (max-width: 600px) {
@@ -53,13 +56,11 @@
         display: none;
     } 
     aside ul  a {
-        padding: 10px 0;
+       text-align: center;
+       padding: 10px 0; 
     }
     nav a {
         width: calc(100% / 4);
         font-size: 10px;
-    }
-    .time, .vol {
-        margin: 0 0;
     }
 }

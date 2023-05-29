@@ -185,9 +185,6 @@ footer .row > * {
     display: inline-block;
     margin: 0 15px;
 }
-span > div:nth-child(2) {
-    display: inline-block;
-}
 .time > div, .vol > div {
     width: 40%;
     height: 100%;
@@ -195,8 +192,11 @@ span > div:nth-child(2) {
     border-radius: 2px;
 }
  .fa-heart {
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+footer p {
+    color: gray;
 }
 footer .row .col:nth-child(2) > * , .fa-bars,  .fa-display, .fa-volume-high {
     padding: 10px 10px;
