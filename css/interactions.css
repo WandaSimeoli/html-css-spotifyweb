@@ -1,0 +1,56 @@
+/* Interazioni e Animazioni */
+
+ ul li:hover{
+    color: white;
+}
+aside ul a li:hover {
+    color: white;
+}
+.mobile:hover {
+    color: white;
+}
+.down a:hover {
+    color: white;
+}
+ul a:hover .fa-house {
+    color: white;
+}
+header button {
+    transition: width 2s;
+}
+header button:hover {
+    transform: scale(1.2);
+}
+footer p:hover {
+    color: white;
+    text-decoration: underline;
+}
+.fa-heart:hover {
+    color: white;
+}
+.fa-folder:hover {
+    color: white;
+}
+.time > div:hover {
+   background-color: yellowgreen;
+}
+.vol > div:hover {
+    background-color: yellowgreen; 
+}
+footer .fa-circle-play {
+    transition: width 2s;
+}
+footer .fa-circle-play:hover {
+    transform: scale(1.5);
+}
+.col > img:hover .overlay {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform:translate(-50%,-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 20px;
+   padding: 10px;
+}
