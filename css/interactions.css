@@ -43,14 +43,33 @@ footer .fa-circle-play {
 footer .fa-circle-play:hover {
     transform: scale(1.5);
 }
-.col > img:hover .overlay {
+.col > .img-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.border > .img-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 50%;
+    display: none;
+}
+.overlay > .fa-circle-play {
     color: white;
     font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
    transform:translate(-50%,-50%);
-   background-color: rgba(0, 0, 0, 0.5);
-   border-radius: 20px;
-   padding: 10px;
+}
+main .col:hover .overlay {
+    display: block;
 }
